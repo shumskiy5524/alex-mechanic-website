@@ -1,0 +1,228 @@
+/* css/style.css */
+/* ========================
+   Общие стили Mobile-First
+   ======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #1e293b, #0f172a); /* красивый градиент */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero-section {
+    background: url('../images/garage-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 60px 15px;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background: rgba(0,0,0,0.5); /* полупрозрачный слой для читаемости текста */
+    z-index:0;
+}
+
+.hero-section * {
+    position: relative;
+    z-index:1;
+}
+
+.hero-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.hero-section h2, .hero-section p {
+    margin-bottom: 15px;
+}
+
+.hero-section .btn {
+    background: #e11d48;
+    padding: 12px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-section .btn:hover {
+    background: #c2183b;
+}
+
+/* Sections */
+section {
+    padding: 40px 15px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Grid sections: Services, Why, Reviews, Gallery */
+.services-grid, .why-grid, .reviews-grid, .gallery-grid {
+    display: grid;
+    gap: 15px;
+}
+
+.card, .review {
+    background: #fff;
+    color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Contact section */
+.contact-section {
+    background: #2a3650;
+    color: #fff;
+    text-align: center;
+}
+
+/* Модальное окно */
+.modal.hidden {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.modal-content {
+    background: #1f2a42;
+    padding: 30px;
+    border-radius: 12px;
+    width:90%;
+    max-width:500px;
+    text-align:center;
+    position: relative;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:none;
+    font-size:14px;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+    outline: 2px solid #e11d48;
+}
+
+.modal-content .btn {
+    background:#e11d48;
+    color:#fff;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.modal-content .btn:hover { background:#c2183b; }
+
+.modal-content .thank-message { color:#4ade80; font-weight:500; margin-top:15px; }
+
+.close {
+    position:absolute;
+    top:15px; right:20px;
+    font-size:28px;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ========================
+   Планшеты (768px +)
+   ======================== */
+@media(min-width:768px){
+    header nav a { font-size: 15px; margin: 0 10px; }
+    .hero-section img { width: 120px; height: 120px; }
+    .services-grid, .why-grid, .reviews-grid, .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ========================
+   Десктоп (1024px +)
+   ======================== */
+@media(min-width:1024px){
+    header h1 { font-size: 24px; }
+    header nav a { font-size: 16px; margin: 0 15px; }
+    .hero-section { padding: 60px 30px; }
+    .hero-section img { width: 150px; height: 150px; }
+    .services-grid, .why-grid, .reviews-grid, .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section { padding: 60px 30px; }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Mobile Mechanic | Manchester</title>
+<meta name="description" content="Reliable mobile mechanic in Manchester, UK. Brake repair, engine diagnostics, car servicing at your location. English & Ukrainian speaking.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header / Навигация -->
+<header>
+  <div class="header-container">
+    <h1>Alex Mobile Mechanic</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#why">Why Choose Me</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="hero" class="hero-section">
+  <img src="images/mechanic.jpg" alt="Mechanic Photo">
+  <h2>Reliable Mobile Mechanic in Manchester, UK</h2>
+  <p>Over 10 years experience, fully insured, mobile service at your location. English & Ukrainian speaking.</p>
+  <button id="showFormBtn" class="btn">Book a Visit</button>
+</section>
+
+<!-- Services -->
+<section id="services" class="services-section">
+  <h2 class="section-title">Services</h2>
+  <div class="services-grid">
+    <div class="card"><h3>Brake Repair</h3><p>Replacement of brake pads and inspection of discs.</p></div>
+    <div class="card"><h3>Engine Diagnostics</h3><p>Full engine diagnostics to find problems quickly.</p></div>
+    <div class="card"><h3>Oil Change</h3><p>Professional oil replacement service at your location.</p></div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="gallery-section">
+  <h2 class="section-title">Recent Work</h2>
+  <div class="gallery-grid">
+    <img src="images/work1.jpg" alt="Work Photo 1">
+    <img src="images/work2.jpg" alt="Work Photo 2">
+    <img src="images/work3.jpg" alt="Work Photo 3">
+  </div>
+</section>
+
+<!-- Why Choose Me -->
+<section id="why" class="why-section">
+  <h2 class="section-title">Why Choose Me</h2>
+  <div class="why-grid">
+    <div class="card">10+ years experience</div>
+    <div class="card">Fully insured & reliable</div>
+    <div class="card">Mobile service at your location</div>
+    <div class="card">Honest & competitive pricing</div>
+    <div class="card">Ukrainian & English speaking</div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section id="reviews" class="reviews-section">
+  <h2 class="section-title">Customer Reviews</h2>
+  <div class="reviews-grid">
+    <div class="review">"Excellent work and fast service." – Alex, Manchester</div>
+    <div class="review">"Very professional and reliable." – Maria, Manchester</div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Contact</h2>
+  <p><strong>Phone:</strong> 07123 456789</p>
+  <p><strong>Email:</strong> alex@example.com</p>
+  <p><strong>Service Area:</strong> Manchester & nearby areas</p>
+</section>
+
+<!-- Модальная форма (скрыта по умолчанию) -->
+<div id="modalForm" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <h3>Leave your request</h3>
+    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required title="Please enter your name">
+      <input type="email" name="email" placeholder="Your Email" required title="Please enter your email">
+      <textarea name="problem" rows="5" placeholder="Describe your car problem" required title="Please describe your car problem"></textarea>
+      <button type="submit" class="btn">Send Request</button>
+    </form>
+    <p class="thank-message" style="display:none;">Thank you! Your request has been sent.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Alex Mobile Mechanic. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
