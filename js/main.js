@@ -7,7 +7,7 @@ navLinks.forEach(link => {
   });
 });
 
-// Модальное окно
+
 const showFormBtn = document.getElementById('showFormBtn');
 const modal = document.getElementById('modalForm');
 const closeModal = document.getElementById('closeModal');
@@ -18,7 +18,7 @@ showFormBtn.addEventListener('click', () => { modal.classList.remove('hidden'); 
 closeModal.addEventListener('click', () => { modal.classList.add('hidden'); });
 window.addEventListener('click', (e) => { if(e.target===modal) modal.classList.add('hidden'); });
 
-// Очистка формы и закрытие после отправки
+
 contactForm.addEventListener('submit', (e) => {
   setTimeout(() => {
     contactForm.reset();
