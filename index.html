@@ -1,108 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alex Mobile Mechanic | Manchester</title>
-<meta name="description" content="Reliable mobile mechanic in Manchester, UK. Brake repair, engine diagnostics, car servicing at your location. English & Ukrainian speaking.">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Mobile Mechanic | Manchester</title>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<!-- Header / Навигация -->
-<header>
-  <div class="header-container">
-    <h1>Alex Mobile Mechanic</h1>
-    <nav>
-      <a href="#hero">Home</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#why">Why Choose Me</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+  <!-- HEADER -->
+  <header class="top-bar">
+  
+    <h1>Alex Mechanic</h1>
+  
+    <nav class="nav">
+      <a href="#hero" data-i18n="nav_home">Home</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#services" data-i18n="nav_services">Services</a>
+      <a href="#work" data-i18n="nav_work">Work</a>
+      <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
     </nav>
-  </div>
-</header>
+  
+    <div class="lang-switch">
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('ua')">UA</button>
+    </div>
+  
+  </header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
 
-<!-- Hero -->
-<section id="hero" class="hero-section">
-  <img src="images/mechanic.jpg" alt="Mechanic Photo">
-  <h2>Reliable Mobile Mechanic in Manchester, UK</h2>
-  <p>Over 10 years experience, fully insured, mobile service at your location. English & Ukrainian speaking.</p>
-  <button id="showFormBtn" class="btn">Book a Visit</button>
-</section>
+      <img src="images/mechanic.jpg" alt="Mechanic" class="avatar">
 
-<!-- Services -->
-<section id="services" class="services-section">
-  <h2 class="section-title">Services</h2>
-  <div class="services-grid">
-    <div class="card"><h3>Brake Repair</h3><p>Replacement of brake pads and inspection of discs.</p></div>
-    <div class="card"><h3>Engine Diagnostics</h3><p>Full engine diagnostics to find problems quickly.</p></div>
-    <div class="card"><h3>Oil Change</h3><p>Professional oil replacement service at your location.</p></div>
-  </div>
-</section>
+      <h2 data-i18n="hero_title">Mobile Mechanic in Manchester</h2>
 
-<!-- Gallery -->
-<section id="gallery" class="gallery-section">
-  <h2 class="section-title">Recent Work</h2>
-  <div class="gallery-grid">
-    <img src="images/work1.jpg" alt="Work Photo 1">
-    <img src="images/work2.jpg" alt="Work Photo 2">
-    <img src="images/work3.jpg" alt="Work Photo 3">
-  </div>
-</section>
+      <p data-i18n="hero_text">
+        10+ years experience. Diagnostics, brakes & servicing at your location.
+      </p>
 
-<!-- Why Choose Me -->
-<section id="why" class="why-section">
-  <h2 class="section-title">Why Choose Me</h2>
-  <div class="why-grid">
-    <div class="card">10+ years experience</div>
-    <div class="card">Fully insured & reliable</div>
-    <div class="card">Mobile service at your location</div>
-    <div class="card">Honest & competitive pricing</div>
-    <div class="card">Ukrainian & English speaking</div>
-  </div>
-</section>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Contact</a>
+        <a href="#services" class="btn outline">Services</a>
+      </div>
 
-<!-- Reviews -->
-<section id="reviews" class="reviews-section">
-  <h2 class="section-title">Customer Reviews</h2>
-  <div class="reviews-grid">
-    <div class="review">"Excellent work and fast service." – Alex, Manchester</div>
-    <div class="review">"Very professional and reliable." – Maria, Manchester</div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- Contact -->
-<section id="contact" class="contact-section">
-  <h2 class="section-title">Contact</h2>
-  <p><strong>Phone:</strong> 07123 456789</p>
-  <p><strong>Email:</strong> alex@example.com</p>
-  <p><strong>Service Area:</strong> Manchester & nearby areas</p>
-</section>
+  <!-- ABOUT -->
+  <section class="section">
+    <h2 data-i18n="about_title">About</h2>
 
-<!-- Модальная форма (скрыта по умолчанию) -->
-<div id="modalForm" class="modal hidden">
-  <div class="modal-content">
-    <span id="closeModal" class="close">&times;</span>
-    <h3>Leave your request</h3>
-    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required title="Please enter your name">
-      <input type="email" name="email" placeholder="Your Email" required title="Please enter your email">
-      <textarea name="problem" rows="5" placeholder="Describe your car problem" required title="Please describe your car problem"></textarea>
-      <button type="submit" class="btn">Send Request</button>
-    </form>
-    <p class="thank-message" style="display:none;">Thank you! Your request has been sent.</p>
-  </div>
-</div>
+    <p data-i18n="about_text">
+      Professional mobile mechanic based in Manchester with over 10 years of experience.
+      I provide fast, reliable and affordable vehicle repair services directly at your location.
+    </p>
+  </section>
 
-<!-- Footer -->
-<footer>
-  <p>© 2026 Alex Mobile Mechanic. All rights reserved.</p>
-</footer>
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2 data-i18n="services_title">Services</h2>
 
-<script src="js/main.js"></script>
+    <div class="grid">
+      <div class="card">Engine Diagnostics</div>
+      <div class="card">Brake Repair</div>
+      <div class="card">Oil & Filter Change</div>
+      <div class="card">Suspension Repair</div>
+      <div class="card">Battery Replacement</div>
+      <div class="card">Mobile Servicing</div>
+    </div>
+  </section>
 
+  <!-- WORK -->
+  <section class="section">
+    <h2>Recent Work</h2>
+
+    <div class="grid">
+      <img src="images/work1.jpg" class="work-img">
+      <img src="images/work2.jpg" class="work-img">
+      <img src="images/work3.jpg" class="work-img">
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section">
+    <h2>Reviews</h2>
+
+    <div class="grid">
+      <div class="card">"Fast and professional service." - Alex</div>
+      <div class="card">"Came same day, very reliable." - Maria</div>
+      <div class="card">"Honest pricing and great work." - John</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2 data-i18n="contact_title">Contact</h2>
+
+    <p>📞 07123 456789</p>
+    <p>📧 alex@example.com</p>
+    <p>📍 Manchester & surrounding areas</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Alex Mobile Mechanic</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>
