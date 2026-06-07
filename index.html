@@ -13,105 +13,96 @@
 
   <!-- HEADER -->
   <header class="top-bar">
-  
-    <h1>Alex Mechanic</h1>
-  
+
+    <h1 id="logo">Alex Mobile Mechanic</h1>
+
     <nav class="nav">
-      <a href="#hero" data-i18n="nav_home">Home</a>
       <a href="#about" data-i18n="nav_about">About</a>
       <a href="#services" data-i18n="nav_services">Services</a>
       <a href="#work" data-i18n="nav_work">Work</a>
-      <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
       <a href="#contact" data-i18n="nav_contact">Contact</a>
     </nav>
-  
+
     <div class="lang-switch">
       <button onclick="setLang('en')">EN</button>
       <button onclick="setLang('ua')">UA</button>
     </div>
-  
+
   </header>
+
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
+  <section id="hero" class="hero">
 
-      <img src="images/mechanic.jpg" alt="Mechanic" class="avatar">
+    <img src="images/mechanic.jpg" class="avatar" alt="Mechanic">
 
-      <h2 data-i18n="hero_title">Mobile Mechanic in Manchester</h2>
+    <h2 data-i18n="hero_title">Mobile Mechanic in Manchester</h2>
 
-      <p data-i18n="hero_text">
-        10+ years experience. Diagnostics, brakes & servicing at your location.
-      </p>
+    <p data-i18n="hero_text">
+      10+ years experience. Diagnostics, brakes & servicing at your location.
+    </p>
 
-      <div class="hero-buttons">
-        <a href="#contact" class="btn">Contact</a>
-        <a href="#services" class="btn outline">Services</a>
-      </div>
+    <a href="#contact" class="btn">Contact</a>
 
-    </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="section">
+  <section id="about" class="section">
+
     <h2 data-i18n="about_title">About</h2>
 
     <p data-i18n="about_text">
       Professional mobile mechanic based in Manchester with over 10 years of experience.
-      I provide fast, reliable and affordable vehicle repair services directly at your location.
+      Fast, reliable and affordable car repair at your location.
     </p>
+
   </section>
 
   <!-- SERVICES -->
   <section id="services" class="section">
+
     <h2 data-i18n="services_title">Services</h2>
 
     <div class="grid">
-      <div class="card">Engine Diagnostics</div>
-      <div class="card">Brake Repair</div>
-      <div class="card">Oil & Filter Change</div>
-      <div class="card">Suspension Repair</div>
-      <div class="card">Battery Replacement</div>
-      <div class="card">Mobile Servicing</div>
+      <div class="card" data-i18n="service_engine">Engine Diagnostics</div>
+      <div class="card" data-i18n="service_brake">Brake Repair</div>
+      <div class="card" data-i18n="service_oil">Oil & Filter Change</div>
+      <div class="card" data-i18n="service_suspension">Suspension Repair</div>
+      <div class="card" data-i18n="service_battery">Battery Replacement</div>
+      <div class="card" data-i18n="service_mobile">Mobile Servicing</div>
     </div>
+
   </section>
 
   <!-- WORK -->
-  <section class="section">
-    <h2>Recent Work</h2>
+  <section id="work" class="section">
+
+    <h2 data-i18n="work_title">Work</h2>
 
     <div class="grid">
       <img src="images/work1.jpg" class="work-img">
       <img src="images/work2.jpg" class="work-img">
       <img src="images/work3.jpg" class="work-img">
     </div>
-  </section>
 
-  <!-- REVIEWS -->
-  <section class="section">
-    <h2>Reviews</h2>
-
-    <div class="grid">
-      <div class="card">"Fast and professional service." - Alex</div>
-      <div class="card">"Came same day, very reliable." - Maria</div>
-      <div class="card">"Honest pricing and great work." - John</div>
-    </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section contact">
+
     <h2 data-i18n="contact_title">Contact</h2>
 
-    <p>📞 07123 456789</p>
-    <p>📧 alex@example.com</p>
-    <p>📍 Manchester & surrounding areas</p>
+    <p data-i18n="contact_phone">📞 07123 456789</p>
+    <p data-i18n="contact_email">📧 alex@example.com</p>
+    <p data-i18n="contact_location">📍 Manchester & surrounding areas</p>
+
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Alex Mobile Mechanic</p>
+    <p data-i18n="footer_copyright">© 2026 Alex Mobile Mechanic</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
